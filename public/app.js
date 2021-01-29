@@ -24,7 +24,7 @@ function signup() {
     }).then((response) => {
         if (response.data.status === 200) {
             alert(response.data.message)
-            location.href = "./login.html"
+            location.href = "login.html"
         }
         else {
             alert(response.data.message);
@@ -49,7 +49,7 @@ function userLogin() {
     }).then((response) => {
         console.log(response);
         alert(response.data.message)
-        location.href = "./profile.html"
+        location.href = "profile.html"
 
     }, (error) => {
         alert(error.data.message)
@@ -115,7 +115,7 @@ function getProfile() {
 
     }, (error) => {
         console.log(error.message);
-        location.href = "./login.html"
+        location.href = "login.html"
     });
     return false
 }
@@ -136,7 +136,7 @@ function forget() {
         console.log(response)
         if (response.data.status === 200) {
             alert(response.data.message)
-            location.href = "./forget2.html"
+            location.href = "forget2.html"
         }
         else {
             alert(response.data.message)
@@ -178,7 +178,7 @@ function forgetCode() {
             console.log(response.data.message)
             if (response.data.status == 200) {
                 alert(response.data.message)
-                window.location.href = "./login.html"
+                window.location.href = "login.html"
             } else {
                 alert(response.data.message)
             }
